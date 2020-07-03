@@ -46,7 +46,6 @@
   .header-search {
     display: inline-block;
     position: relative;
-    margin-right: 15px;
   }
   .header-search .active {
     color: var(--color-high-text);
@@ -54,11 +53,6 @@
   .header-search:hover {
     color: var(--color-high-text);
   }
-  /* .header-search i {
-    font-size: 200px;
-    position: relative;
-    top: 3px;
-  } */
   .header-search input {
     border: none;
     outline: none;
@@ -79,7 +73,4 @@
   .header-search input:focus {
     border-bottom: 1px solid #8fd0cc;
   }
-  /* .header-search:hover {
-    color: var(--color-high-text)
-  } */
 </style>

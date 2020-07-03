@@ -2,7 +2,7 @@
   <div class="site-logo">
     <router-link to="/">
       <img src="@/assets/site-logo.svg" alt="">
-      <p class="site-name">GBlog</p>
+      <p class="site-name">Gblog</p>
     </router-link>
   </div>
 </template>
@@ -16,12 +16,12 @@
 <style scoped lang="less">
   .site-logo {
     text-align: center;
-  
+    
     img {
       width: 60px;
       height: 60px;
     }
-    .site-name {
+    p.site-name {
       position: relative;
       font-size: 15px;
       font-weight: bold;

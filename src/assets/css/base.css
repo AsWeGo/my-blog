@@ -2,7 +2,7 @@
 
 /*:root -> 获取根元素html*/
 :root {
-  --color-text: #666;
+  --color-text: #6f6f6f;
   --color-high-text: #ff5777;
   --color-tint: #ff8198;
   --color-background: #fff;
@@ -10,32 +10,30 @@
   --line-height: 1.5;
 }
 
-* {
-  font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
-  margin: 0;
-  padding: 0;
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td
+{
+  font-size: 17;
+  font-family: "Microsoft YaHei", SimSun, sans-serif;
   text-decoration: none;
+
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;
+  color: var(--color-text);
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 a {
   color: var(--color-text);
   text-decoration: none;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
@@ -44,3 +42,7 @@ a {
 ::-webkit-scrollbar-track {
   background-color: #ffffff;
 }
+/* 
+* {
+  outline: 1px red solid;
+} */
