@@ -31,7 +31,6 @@
     created(){
       this.getWebSiteInfo()
       this.getSocial()
-      console.log(this.socials);
       
     },
     methods:{

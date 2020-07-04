@@ -11,7 +11,12 @@ Vue.use(VueRouter)
       component: () => import('views/Home.vue')
     },
     {
-      path: '/search/:word',
+      path: '/category/:cate',
+      name: 'category',
+      component: () => import('../views/Home.vue')
+    },
+    {
+      path: '/search/:words',
       name: 'search',
       component: () => import('views/Home.vue')
     },

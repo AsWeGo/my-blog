@@ -25,7 +25,7 @@
     },
     methods: {
       search() {
-        this.$router.push({name:'search', params:{word:this.searchValue}})
+        this.$router.push({name:'search', params:{words:this.searchValue}})
       },
       click() {
         this.searchValue = ''

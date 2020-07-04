@@ -48,7 +48,7 @@ const actions = {
           desc:"一个It技术的探索者",
           domain:"https://www.fengziy.cn",
           name:"FZY′blog",
-          notice:"本博客的Demo数据由Mockjs生成",
+          notice:"本博客的数据暂时为假数据",
           slogan:"The way up is not crowded, and most chose ease.",
           background: "http://lc-Cgd22gH7.cn-n1.lcfile.com/82387c3017adf9a4e704/%E8%95%BE%E5%A7%86%E6%B0%B4.jpeg"
         }
@@ -96,7 +96,7 @@ const modules = {
 const getters = {
   loading: state => state.loading,
   runTimeInterval: state => state.runTimeInterval,
-  notice: state => state.websiteInfo?state.websiteInfo.notice:''
+  notice: state => state.websiteInfo ? state.websiteInfo.notice : ''
 }
 export default new Vuex.Store({
   state,
