@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import {getTimeInterval} from '../utils/index'
 
 Vue.use(Vuex)
+// 略:后台获取系统运行时间
+const runAt = '1589878800000';
+let timer = null;
 
 const state = {
   loading: false,
@@ -78,7 +82,10 @@ const actions = {
         resolve(data);
       }
     })
-  }
+  },
+  initComputeTime: ({commit}) => {
+    commit('GET_RUNTIME_INTERVAL');
+  },
 }
  
 
