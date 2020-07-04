@@ -4,6 +4,7 @@
     <layout-header></layout-header>
     <layout-body></layout-body>
     <layout-footer></layout-footer>
+    <live2d/>
   </div>
 </template>
 
@@ -12,14 +13,15 @@
   import layoutHeader from 'components/layout/layout-header.vue'
   import layoutBody from 'components/layout/layout-body.vue'
   import layoutFooter from 'components/layout/layout-footer.vue'
-  
+  import live2d from 'components/live2d.vue'
   export default {
     name:"App",
     components: {
       layoutHeader,
       layoutBody,
       layoutFooter,
-      loading
+      loading,
+      live2d
     }
   }
 </script>
