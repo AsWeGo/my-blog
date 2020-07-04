@@ -79,6 +79,11 @@
 <style scoped lang="less">
   .site-menu {
     display: flex;
-    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 960px){
+  }
+  @media (max-width: 600px){
+
   }
 </style>

@@ -20,29 +20,29 @@
 </script>
 
 <style scoped lang="less">
-  .menu-item {
-    position: relative;
-    min-width: 60px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    a {
-      padding: 12px 10px;
-      color: #545454;
-      font-weight: 500;
-      font-size: 16px;
-      &:hover {
-          color: var(--color-high-text);
-      }
+.menu-item {
+  position: relative;
+  min-width: 60px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  a {
+    padding: 12px 10px;
+    color: #545454;
+    font-weight: 500;
+    font-size: 16px;
+    &:hover {
+        color: var(--color-high-text);
     }
-    &:not(:last-child){
-      margin-right: 15px;
-    }
-    &:hover .hasChildMenu{
-      opacity:1;
-      visibility: visible;
-      transform: translateY(-5px);
-    }
+  }
+  &:not(:last-child){
+    margin-right: 15px;
+  }
+  &:hover .hasChildMenu{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(-5px);
+  }
 
   .hasChildMenu {
     width: 130px;
@@ -96,6 +96,17 @@
   }
   .noChildMenu {
     display: none;
+  }
+}
+@media (max-width: 960px){
+}
+@media (max-width: 600px){
+  div.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: 0;
+    margin-right: 0px !important;
   }
 }
 </style>

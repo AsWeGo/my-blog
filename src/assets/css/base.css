@@ -46,3 +46,6 @@ a {
 * {
   outline: 1px red solid;
 } */
+html {
+  min-width: 400px;
+}

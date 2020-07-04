@@ -1,4 +1,4 @@
-! function () {
+export default function () {
   //返回 n的e属性, 如果没有 返回t
   function n(n, e, t) {
     return n.getAttribute(e) || t
@@ -104,4 +104,4 @@
       i()
     }, 100)
 
-}();
+};

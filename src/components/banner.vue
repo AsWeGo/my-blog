@@ -94,7 +94,6 @@
   }
   .focusInfo {
     position: relative;
-    min-width: 800px;
     padding: 0px 10px;
     top: 40%;
     left: 50%;
@@ -140,20 +139,24 @@
       }
     }
   }
-  // @media (max-width: 960px){
-  //   #banner {height: 400px;}
-  // }
-  // @media (max-width: 800px){
-  //   .banner-img{
-  //     // display: fixed;
-  //     overflow: hidden;
-  //     background-attachment:fixed;
-  //     background-position: center center;
-  //     background-repeat: no-repeat;
-  //     background-attachment: fixed;
-  //     background-size: cover;
-  //     z-index: -1;
-  //     transition: unset;
-  //   }
-  // }
+  @media (max-width: 800px){
+    #banner .banner-img {
+      // background-size: contain;
+      background-size: 800px;
+    }
+    
+    .slant-left, .slant-right {
+      display: none;
+    }
+  }
+  @media (max-width: 400px){
+    #banner .banner-img {
+      background-size: contain;
+      // background-size: 600px;
+    }
+    
+    .slant-left, .slant-right {
+      display: none;
+    }
+  }
 </style>

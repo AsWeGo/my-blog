@@ -58,6 +58,7 @@
     width: 100%;
     padding: 0px 80px;
     z-index: 9;
+    
 
     background-color: #fff;
     display:flex;
@@ -74,20 +75,22 @@
     -ms-transition: .3s all ease;
 
     &.hidden {
-      top: -100px;
+      // top: -100px;
     }
     &.fixed {
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
     }
   }
   @media (max-width: 960px){
-        #layout-header{
-            padding: 0 20px;
-        }
+    #layout-header{
+      padding: 0 20px;
     }
+  }
   @media (max-width: 600px){
-      #layout-header{
-          padding: 0 10px;
-      }
+    #layout-header{
+      // justify-content: ;
+      padding: 0 10px;
+      
+    }
   }
 </style>

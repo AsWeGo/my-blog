@@ -73,4 +73,16 @@
   .header-search input:focus {
     border-bottom: 1px solid #8fd0cc;
   }
+  @media (max-width: 800px){
+  }
+  @media (max-width: 600px){
+    .header-search {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .header-search input.show {
+      margin-right: 1000px;
+    }
+  }
 </style>
