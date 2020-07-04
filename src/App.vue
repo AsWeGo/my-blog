@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <home></home>
+    <loading></loading>
+    <layout-header></layout-header>
+    <layout-body></layout-body>
+    <layout-footer></layout-footer>
   </div>
 </template>
 
 <script>
-  import Home from 'views/Home.vue'
+  import loading from 'components/loading.vue'
+  import layoutHeader from 'components/layout/layout-header.vue'
+  import layoutBody from 'components/layout/layout-body.vue'
+  import layoutFooter from 'components/layout/layout-footer.vue'
   
   export default {
     name:"App",
     components: {
-      Home
+      layoutHeader,
+      layoutBody,
+      layoutFooter,
+      loading
     }
   }
-
 </script>
 
 <style>

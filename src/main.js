@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from 'router'
 import store from './store/index.js'
+import './assets/font/iconfont.css'
 import "utils/bcg-line"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
