@@ -1,7 +1,7 @@
 <template>
-  <div id="banner" >
+  <div id="banner">
     <div class="banner-img" :style="{'background-image': `url(${websiteInfo.background})`}">
-      <div class="focusInfo">
+      <div class="focusInfo" :class="{'noVisible':notHome}">
         <div class="header-tou">
           <router-link to="/"><img :src="websiteInfo.avatar"></router-link>
         </div>
@@ -12,9 +12,8 @@
           <div v-for="item in socials" :key="item.id" :title="item.title"><a :href="item.href" target="_blank" :style="{'color':item.color}"><i class="iconfont" :class="item.icon"></i></a></div>
         </div>
       </div>
-      
-      <div class="slant-left"></div>
-      <div class="slant-right"></div>
+      <div class="slant-left" :class="{'noVisible':notHome}"></div>
+      <div class="slant-right" :class="{'noVisible':notHome}"></div>
     </div>
   </div>
 </template>
@@ -28,10 +27,15 @@
         socials: []
       }
     },
+    props: {
+      notHome: {
+        type: Boolean,
+        default: true
+      }
+    },
     created(){
       this.getWebSiteInfo()
       this.getSocial()
-      
     },
     methods:{
       getSocial(){
@@ -54,11 +58,11 @@
     margin-top: 80px;
     width: 100%;
     height: 500px;
-    // background-color: skyblue;
-    // text-align: center;
+    .noVisible {
+      display: none;
+    }
 
     .banner-img{
-      // display: fixed;
       width: inherit;
       height: inherit;
       overflow: hidden;
@@ -140,7 +144,6 @@
   }
   @media (max-width: 800px){
     #banner .banner-img {
-      // background-size: contain;
       background-size: 800px;
     }
     
@@ -151,11 +154,11 @@
   @media (max-width: 400px){
     #banner .banner-img {
       background-size: contain;
-      // background-size: 600px;
     }
     
     .slant-left, .slant-right {
       display: none;
     }
   }
+
 </style>

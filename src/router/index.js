@@ -20,7 +20,21 @@ Vue.use(VueRouter)
       name: 'search',
       component: () => import('views/Home.vue')
     },
-    
+    {
+        path: '/about',
+        name: 'about',
+        component: () => import('../views/About.vue')
+    },
+    {
+        path: '/friend',
+        name: 'friend',
+        component: () => import('../views/Friend.vue')
+    },
+    {
+        path: '/article/:id',
+        name: 'article',
+        component: () => import('views/Articles.vue')
+    }
   ]
 
 const router = new VueRouter({

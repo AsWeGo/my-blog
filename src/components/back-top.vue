@@ -1,8 +1,8 @@
 <template>
     <transition name="slide-fade">
         <div class="back-top" v-show="show" @click.stop="getTop">
-            <img class="img1" src="@/assets/_tortoise.svg" alt="">
-            <img class="img2" src="@/assets/tortoise.svg" alt="">
+            <img class="img1" src="~assets/_tortoise.svg" alt="">
+            <img class="img2" src="~assets/tortoise.svg" alt="">
             <p>Top</p>
         </div>
     </transition>

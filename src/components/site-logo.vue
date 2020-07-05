@@ -2,7 +2,7 @@
   <div class="site-logo">
     <router-link to="/">
       <img src="@/assets/site-logo.svg" alt="">
-      <p class="site-name">Gblog</p>
+      <p class="site-name">极客小站</p>
     </router-link>
   </div>
 </template>

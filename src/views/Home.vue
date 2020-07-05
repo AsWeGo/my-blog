@@ -1,10 +1,10 @@
 <template>
 <div class="home">
-    <banner></banner>
+    <banner :notHome="false"></banner>
     <div class="site-content animation">
         <div class="notify">
             <div class="search-result" v-if="hideSlogan">
-                <span v-if="words">搜索结果："{{searchWords}}" 相关文章</span>
+                <span v-if="searchWords">搜索结果："{{searchWords}}" 相关文章</span>
                 <span v-else-if="category">分类 "{{category}}" 相关文章</span>
             </div>
             <quote v-else>{{notice}}</quote>
@@ -145,21 +145,6 @@
                         commentsCount: 99
                      })
                 }
-                // console.log(length);
-                
-                // let i = 5;
-                // this.postList.push({
-                //         id: i,
-                //         isTop: i%2==0,
-                //         banner: banners[i%length],
-                //         isHot: i%2==1,
-                //         pubTime: 24232472657,
-                //         title: '看一遍闭着眼都会安装Lua了',
-                //         summary: 'Lua 是一种轻量小巧的脚本语言，能为应用程序提供灵活的扩展和定制功能。',
-                //         content: '<p>I am testing data, I am testing data.</p><p><img src="https://wpimg.wallstcn.com/4c69009c-0fd4-4153-b112-6cb53d1cf943"></p>',
-                //         viewsCount: 4045,
-                //         commentsCount: 99
-                //      })
                 
                 this.currPage = this.currPage+1;
                 this.hasNextPage = this.currPage < this.postList.length
